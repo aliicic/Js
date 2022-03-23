@@ -45,3 +45,4 @@ const data = getData((data) => {
 });
 
 console.log("second step");
+ 
