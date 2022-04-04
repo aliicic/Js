@@ -64,6 +64,7 @@ var makeCounter = function() {
 
 var counter1 = makeCounter();
 var counter2 = makeCounter();
+
 console.log(counter1);
 console.log(counter1.value());  // 0.
 
@@ -74,3 +75,21 @@ console.log(counter1.value()); // 2.
 counter1.decrement();
 console.log(counter1.value()); // 1.
 console.log(counter2.value()); // 0.
+
+////////////////////////////////////////////////////////////////
+console.log(`/////////////////////////////////////////////////////////////////////////`);
+
+function outer() {
+  let x = 20
+     function inner () {
+       return x++
+   };
+
+  return inner
+}
+
+const x = outer();
+const y = outer();
+console.log(x());
+console.log(y());
+console.log(x());

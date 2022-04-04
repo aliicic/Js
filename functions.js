@@ -70,4 +70,13 @@ mark.map((item) => {
     sum += item
 
 })
-console.log(sum/mark.length >= 10 ? 'okay' : 'nokay');
+console.log(sum / mark.length >= 10 ? 'okay' : 'nokay');
+
+//?=---------------------------------
+
+{
+  const x = () => "ali";
+  y = () => "ali";
+}
+
+console.log(y());
