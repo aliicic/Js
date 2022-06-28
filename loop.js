@@ -65,11 +65,11 @@ const user = ['ali-09353274130', 'reza-09184338837', 'hossein-09125836432']
 
 ////////////////////////////////////////////////
 
-const info = [
+let info = [
     
-    { name: 'ali', marks: [1, 3, 5, 20, 10, 20] },
-    { name: 'reza', marks: [20, 15, 5, 14, 10, 2] },
-    { name: 'hassas', marks: [1, 13, 5, 14, 16, 20] },
+    { 'name': 'ali', marks: [1, 3, 5, 20, 10, 20] },
+    { "name": 'ali', marks: [20, 15, 5, 14, 10, 2] },
+    {"name": 'hassas', marks: [1, 13, 5, 14, 16, 20] },
     { name: 'hossein', marks: [11, 13, 15, 2, 10, 2] },
     { name: 'sara', marks: [11, 13, 16, 19, 10, 15] },
     { name: 'akbar', marks: [10, 13, 15, 0, 0, 12] },
@@ -77,8 +77,26 @@ const info = [
     { name: 'maryam', marks: [20,17, 15, 14, 10, 20] },
 ]
 
+//? changing key name
+// info.forEach((item, i) => {
+//  // item.name = item.name + '1'
+//      Object.keys(item).map((oldKey, index) => {
+//        key = oldKey.split(".").join("");
+//        if (oldKey !== key) {
+//          Object.defineProperty(
+//            item,
+//            key,
+//            Object.getOwnPropertyDescriptor(item, oldKey)
+//          );
+//          delete item[oldKey];
+//        }
+//        console.log(key);
+//      });
+// })
+ 
+// console.log(info.filter((i) => i.name === "ali").length);
 
-console.log(info);
+// console.log(info);
 
 // const res = info.map(item => {
   
@@ -100,13 +118,13 @@ console.log(info);
 // })
 
 
-const res = info.map(item => {
+// const res = info.map(item => {
     
-    const sum = item.marks.reduce((acc, cur) => acc + cur)
-    const mid = sum / item.marks.length
-    item.mid = mid
-    return item  
-}).filter(item => item.mid  < 10)
+//     const sum = item.marks.reduce((acc, cur) => acc + cur)
+//     const mid = sum / item.marks.length
+//     item.mid = mid
+//     return item  
+// }).filter(item => item.mid  < 10)
 
 
 
@@ -114,21 +132,32 @@ const res = info.map(item => {
 
 
 
-console.log(res);
+//console.log(res);
 // console.log(res1);
 
 
 
 
+// const arr = [10, 12, 15, 21];
+
+// for (let i = 0; i < arr.length; i++) {
+
+
+//   setTimeout(function () {
+//     console.log("Index: " + i + ", element: " + arr[i]);
+//   }, 3000);
+    
+    
+    
+// }
+
+let i = 0
+let j = 0
+console.log(i++);
+console.log(++j);
+
 const arr = [10, 12, 15, 21];
-
-for (let i = 0; i < arr.length; i++) {
-
-
-  setTimeout(function () {
-    console.log("Index: " + i + ", element: " + arr[i]);
-  }, 3000);
-    
-    
-    
-}
+ 
+arr.forEach((i) => {
+  console.log(i+1+2);
+})

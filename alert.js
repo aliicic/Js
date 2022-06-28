@@ -1,0 +1,1 @@
+num1 = prompt('num1')

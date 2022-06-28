@@ -13,9 +13,10 @@ info.forEach(element => {
     li.innerText = element
     ul.appendChild(li);
     li.style.color = 'white'
-    li.style.padding = '10px'
-    li.style.margin = '20px'
-    li.style.background='red'
+   // li.style.padding = '10px'
+   li.style.margin = '20px'
+  li.style.background = 'red'
+  li.setAttribute("class", "child");
     
    
 });
@@ -23,3 +24,21 @@ info.forEach(element => {
  ul.addEventListener("click", () => {
    console.log(event.target.innerText);
  });
+
+document.body.clientWidth              /* width of <body> */
+document.documentElement.clientWidth   /* width of <html> */
+window.innerWidth                      /* window's width */
+
+// console.log(document.width);
+// console.log(window.innerWidth);
+// console.log(document.documentElement.clientWidth);
+// console.log(document.body.clientWidth);
+// console.log(document.body.getBoundingClientRect());
+
+
+let child = document.getElementsByClassName('child')[0]
+
+child.style.width = '120px'
+console.log(child.offsetWidth, 'el width');
+console.log(child.clientWidth, "el width");
+console.log(child.getBoundingClientRect().width, "el width");
