@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+ #video-block.rotated{
+    -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  transform:rotate(90deg);
+}
+</style>
+<body>
+
+<div id="video-container">
+    <video class="video_player" id="player" width="100%" autoplay="autoplay" playsinline="">
+        <source src="https://wp-iframe.videomill.co/vpaidexamples/videos//vmerce.mp4" />
+        Your browser does not support the HTML5 video tag. Use a better browser!
+    </video>
+    <button id="btn">
+        View Fullscreen!
+    </button>
+</div>
+    
+</body>
+<script>
+    $(function () {
+
+    function makeLandscape() {
+            // this works on android, not iOS
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock('landscape');
+            }
+        }
+
+        $(document).on('click', '#btn', function () {
+            var element = document.getElementById('video-container');
+            if (element.mozRequestFullScreen) {
+                element.mozRequestFullScreen();
+                makeLandscape();
+            } else if (element.webkitRequestFullScreen) {
+                element.webkitRequestFullScreen();
+                makeLandscape();
+            }
+
+        });
+
+    });
+</script>
+</html>

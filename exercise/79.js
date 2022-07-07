@@ -35,8 +35,7 @@ switch (enter) {
     let enteredTodo2 = prompt("enter todo name");
     todos.some((i) => {
       //   i.name === enteredTodo1 ? i.status = true : console.log('entered task is wrong');
-      if (i.name === enteredTodo1) {
-        todos.splice(index, 1);
+      if (i.name === enteredTodo2) {
         i.status = true;
         searchres = true;
         return true;
