@@ -1,0 +1,23 @@
+.item-main{
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   border-radius: 20px;
+   width: 300px;
+}
+.cover{
+    padding: 20px;
+}
+.cover img {
+    border-radius: 20px;
+    width: 100%;
+}
+.content{
+    text-align: center;
+    padding: 10px;
+}
+
+button{
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     border:none;
+     padding: 10px 13px;
+     margin: 5px;
+}
