@@ -26,19 +26,19 @@
 // });
 // console.log(employe);
 
-// let emp = {
-//   ali: [{ name: "task1", date: 1, status: false }],
-//   reza: [{ name: "task1", date: 1, status: false }],
-//   armin: [{ name: "task1", date: 1, status: false }],
-//   soheil: [{ name: "task1", date: 1, status: false }],
-// };
+let emp = {
+  ali: [{ name: "task1", date: 1, status: false }],
+  reza: [{ name: "task1", date: 1, status: false }],
+  armin: [{ name: "task1", date: 1, status: false }],
+  soheil: [{ name: "task1", date: 1, status: false }],
+};
 
-// let emp = [
-//   { name: "ali", tasks: [{ name: "task1", date: 1, status: false }] },
-//   { name: "reza", tasks: [{ name: "task2", date: 1, status: false }] },
-//   { name: "armin", tasks: [{ name: "task3", date: 1, status: false }] },
-//   { name: "soheil", tasks: [{ name: "task4", date: 1, status: false }] },
-// ];
+let emp = [
+  { name: "ali", tasks: [{ name: "task1", date: 1, status: false }] },
+  { name: "reza", tasks: [{ name: "task2", date: 1, status: false }] },
+  { name: "armin", tasks: [{ name: "task3", date: 1, status: false }] },
+  { name: "soheil", tasks: [{ name: "task4", date: 1, status: false }] },
+];
 
 // console.log(employe);
 
